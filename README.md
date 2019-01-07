@@ -6,7 +6,7 @@ This is a simple telegram bot for training your Arabic verbs.
 
 ```
 > /play # Start a quiz
-   `What is Arabic for: "(He) said"? <
+    What is Arabic for: "(He) said"? <
            1. 
            2.
            3.
@@ -16,7 +16,7 @@ This is a simple telegram bot for training your Arabic verbs.
 
 
 > /play
-   `What is Arabic for: "(I) know"? <
+    What is Arabic for: "(I) know"? <
            1. 
            2.
            3.
