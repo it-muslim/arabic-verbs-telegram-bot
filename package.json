@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A simple telegram bot for training Arabic verbs",
   "engines": {
-    "node": "10.x"
+    "node": ">=8.x"
   },
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,11 @@
   },
   "homepage": "https://github.com/it-muslim/arabic-verbs-telegram-bot#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "node-telegram-bot-api": "^0.30.0"
+  },
+  "devDependencies": {
+    "dotenv": "^6.2.0"
   }
 }
