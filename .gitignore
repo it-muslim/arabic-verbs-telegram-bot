@@ -1,1 +1,8 @@
+# Node build artifacts
+node_modules
+npm-debug.log
+
+# Configs
+*.env
+*.dev
 config.json
