@@ -35,7 +35,7 @@ bot.on('message', function (msg) {
 });
 
 bot.onText(/\/start/, (msg) => {
-  bot.sendMessage(msg.chat.id, "Welcome " + msg.from.first_name + " (Rustam's env)");
+  bot.sendMessage(msg.chat.id, "Welcome " + msg.from.first_name);
 });
 
 bot.onText(/\/play/, (msg) => {
