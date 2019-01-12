@@ -2,6 +2,8 @@ const token = process.env.TOKEN
 const Bot = require('node-telegram-bot-api')
 const utils = require('./utils.js')
 const quiz = require('./quiz.js')
+const words = require('./data.json')
+
 let bot
 let storage
 
@@ -13,17 +15,16 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 bot.on('message', function (msg) {
+  const chatID = msg.chat.id
   if (storage == null) {
-    // bot.sendMessage(msg.chat.id, "Что это было, " + msg.from.first_name + "?")
+    bot.sendMessage(chatID, 'The game is not started! Start the game by typing /play')
     return
   }
-  const wordInfo = storage['currentWordInfo']
-  const rightWord = wordInfo['rightWord']
-  const isRightAnwer = (msg.text === rightWord.ar)
-  if (isRightAnwer) {
-    bot.sendMessage(msg.chat.id, 'Красавчик!')
+
+  if (msg.text === storage.answer) {
+    bot.sendMessage(chatID, 'Well done!')
   } else {
-    bot.sendMessage(msg.chat.id, 'Упс, правильно было: ' + rightWord.ar)
+    bot.sendMessage(chatID, 'Oops, the right answer is: ' + storage.answer)
   }
   storage = null
 })
@@ -33,18 +34,12 @@ bot.onText(/\/start/, (msg) => {
 })
 
 bot.onText(/\/play/, (msg) => {
-  const wordInfo = quiz.randomWordInfo()
-  const rightWord = wordInfo['rightWord']
-  const question = quiz.questionText(rightWord)
+  const question = quiz.generateQuestion(words)
+  console.log(question)
+  storage.answer = question.answer
 
-  const variants = utils.shuffleArray(wordInfo['words'].map(word => {
-    return word.ar
-  }))
-
-  const opts = { 'reply_markup': { 'keyboard': [variants], 'one_time_keyboard': true } }
-  storage = { 'currentWordInfo': wordInfo }
-
-  bot.sendMessage(msg.chat.id, question, opts)
+  const opts = { 'reply_markup': { 'keyboard': question.options, 'one_time_keyboard': true } }
+  bot.sendMessage(msg.chat.id, question.text, opts)
 })
 
 module.exports = bot

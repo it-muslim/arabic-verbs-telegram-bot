@@ -1,30 +1,45 @@
-function questionText (word) {
-  // word.plurity
-  // word.geneter
+const assert = require('assert')
 
-  // const question = { ... }
-  // return question
-  return 'они (вдвоем) (женщины) сказали' // TODO: Delete mock
+function generateQuestionText (word) {
+  let text = ""
+  if (word.number === 'singular') {
+    if (word.gender === 'male') {
+      text += "He "
+    } else {
+      text += "She "
+    }
+  } else {
+    text += "They ("
+    if (word.number === 'dual') {
+      text += "two "
+    } else {
+      text += "many "
+    }
+    if (word.gender === 'male') {
+      text += "men) "
+    } else {
+      text += "women) "
+    }
+  }
+  text += word.text.en
+  return text
 }
 
-function randomWordInfo () {
-  // const db = database()
-  // const word = Word({get random data from database})
-  // const words = Word({get 3 random data from database that are not equal to wordId})
+function generateQuestion (words) {
+  // Firstly, pick forms of a random word and shuffle them
+  let forms = words[Math.floor(Math.random() * words.length)].forms
+  assert(forms.length >= 4)
+  forms = forms.sort(() => .5 - Math.random()) // shuffle
 
-  const words = [
-    { 'ar': 'قالت' }, // TODO: Delete mock
-    { 'ar': 'قالوا' },
-    { 'ar': 'قالو' }
-  ]
-  const word = { 'ar': 'قالتا', 'ru': 'сказали' } // TODO: Delete mock
-  words.push(word)
+  // Now pick first 4 of them and the first one will be the right answer
+  let options = forms.slice(0, 4)
+  let answer = options[0]
 
   return {
-    'rightWord': word,
-    'words': words
+    "text": generateQuestionText(answer),
+    "answer": answer.text.ar,
+    "options": options.map(option => option.text.ar)
   }
 }
 
-module.exports.randomWordInfo = randomWordInfo
-module.exports.questionText = questionText
+module.exports.generateQuestion = generateQuestion
