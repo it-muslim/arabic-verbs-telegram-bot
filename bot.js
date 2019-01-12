@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === 'production') {
 bot.on('message', function (msg) {
   const chatID = msg.chat.id
   if (storage == null) {
-    bot.sendMessage(chatID, 'The game is not started! Start the game by typing /play')
+    // bot.sendMessage(chatID, 'The game is not started! Start the game by typing /play')
     return
   }
 
@@ -35,10 +35,9 @@ bot.onText(/\/start/, (msg) => {
 
 bot.onText(/\/play/, (msg) => {
   const question = quiz.generateQuestion(words)
-  console.log(question)
-  storage.answer = question.answer
+  storage = {"answer": question.answer}
 
-  const opts = { 'reply_markup': { 'keyboard': question.options, 'one_time_keyboard': true } }
+  const opts = { 'reply_markup': { 'keyboard': [question.options], 'one_time_keyboard': true } }
   bot.sendMessage(msg.chat.id, question.text, opts)
 })
 
