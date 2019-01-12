@@ -1,6 +1,5 @@
 const token = process.env.TOKEN
 const Bot = require('node-telegram-bot-api')
-const utils = require('./utils.js')
 const quiz = require('./quiz.js')
 const words = require('./data.json')
 
@@ -35,7 +34,7 @@ bot.onText(/\/start/, (msg) => {
 
 bot.onText(/\/play/, (msg) => {
   const question = quiz.generateQuestion(words)
-  storage = {"answer": question.answer}
+  storage = { 'answer': question.answer }
 
   const opts = { 'reply_markup': { 'keyboard': [question.options], 'one_time_keyboard': true } }
   bot.sendMessage(msg.chat.id, question.text, opts)
