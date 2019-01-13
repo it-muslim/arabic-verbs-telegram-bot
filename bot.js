@@ -13,30 +13,42 @@ if (process.env.NODE_ENV === 'production') {
   bot = new Bot(token, { polling: true })
 }
 
-bot.on('message', function (msg) {
+bot.onText(/^[^\/]/, function (msg) {
   const chatID = msg.chat.id
-  if (storage.answer == null) {
-    // bot.sendMessage(chatID, 'The game is not started! Start the game by typing /play')
+  if (storage.chatID == null || storage.chatID.answer == null) {
+    bot.sendMessage(
+      chatID,
+      'The game has not been started! Start the game by typing /play'
+    )
     return
   }
 
-  if (msg.text === storage.answer) {
+  const answer = storage.chatID.answer
+  if (msg.text === answer) {
     bot.sendMessage(chatID, 'Well done!')
   } else {
-    bot.sendMessage(chatID, 'Oops, the right answer is: ' + storage.answer)
+    bot.sendMessage(chatID, 'Oops, the right answer is: ' + answer)
   }
-  delete storage.answer
+  delete storage.chatID.answer
 })
 
-bot.onText(/\/start/, (msg) => {
-  bot.sendMessage(msg.chat.id, 'Welcome ' + msg.from.first_name)
+bot.onText(/^\/start$/, (msg) => {
+  const chatID = msg.chat.id
+
+  bot.sendMessage(
+    chatID,
+    `Welcome *${msg.from.first_name}*!`,
+    { parse_mode: 'Markdown' }
+  )
 })
 
-bot.onText(/\/play/, (msg) => {
+bot.onText(/^\/play$/, (msg) => {
   const question = quiz.generateQuestion(words)
-  storage.answer = question.answer
+  storage.chatID = {'answer': question.answer}
 
-  const opts = { 'reply_markup': { 'keyboard': [question.options], 'one_time_keyboard': true } }
+  const opts = {
+    'reply_markup': { 'keyboard': [question.options], 'one_time_keyboard': true }
+  }
   bot.sendMessage(msg.chat.id, question.text, opts)
 })
 
