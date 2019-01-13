@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === 'production') {
   bot = new Bot(token, { polling: true })
 }
 
-bot.onText(/^[^\/]/, function (msg) {
+bot.onText(/^[^/]/, function (msg) {
   const chatID = msg.chat.id
   if (storage[chatID] == null || storage[chatID].answer == null) {
     bot.sendMessage(
@@ -43,7 +43,7 @@ bot.onText(/^\/start$/, (msg) => {
 bot.onText(/^\/play$/, (msg) => {
   const chatID = msg.chat.id
   const question = quiz.generateQuestion(words)
-  storage[chatID] = {'answer': question.answer}
+  storage[chatID] = { 'answer': question.answer }
 
   const opts = {
     'reply_markup': { 'keyboard': [question.options], 'one_time_keyboard': true }
