@@ -1,0 +1,147 @@
+[
+    {
+        "base": "فعل",
+        "forms": [
+            {
+                "tense": "past",
+                "person": "first",
+                "number": "singular",
+                "gender": "both",
+                "text": {
+                    "ar": "فعلت",
+                    "en": "did"
+                }
+            },
+            {
+                "tense": "past",
+                "person": "first",
+                "number": "plural",
+                "gender": "both",
+                "text": {
+                    "ar": "فعلنا",
+                    "en": "did"
+                }
+            },
+            {
+                "tense": "past",
+                "person": "second",
+                "number": "singular",
+                "gender": "male",
+                "text": {
+                    "ar": "فعلت",
+                    "en": "did"
+                }
+            },
+            {
+                "tense": "past",
+                "person": "second",
+                "number": "singular",
+                "gender": "female",
+                "text": {
+                    "ar": "فعلت",
+                    "en": "did"
+                }
+            },
+            {
+                "tense": "past",
+                "person": "second",
+                "number": "dual",
+                "gender": "male",
+                "text": {
+                    "ar": "فعلتما",
+                    "en": "did"
+                }
+            },
+            {
+                "tense": "past",
+                "person": "second",
+                "number": "dual",
+                "gender": "female",
+                "text": {
+                    "ar": "فعلتما",
+                    "en": "did"
+                }
+            },
+            {
+                "tense": "past",
+                "person": "second",
+                "number": "plural",
+                "gender": "male",
+                "text": {
+                    "ar": "فعلتم",
+                    "en": "did"
+                }
+            },
+            {
+                "tense": "past",
+                "person": "second",
+                "number": "plural",
+                "gender": "female",
+                "text": {
+                    "ar": "فعلتن",
+                    "en": "did"
+                }
+            },
+            {
+                "tense": "past",
+                "person": "third",
+                "number": "singular",
+                "gender": "male",
+                "text": {
+                    "ar": "فعل",
+                    "en": "did"
+                }
+            },
+            {
+                "tense": "past",
+                "person": "third",
+                "number": "singular",
+                "gender": "female",
+                "text": {
+                    "ar": "فعلت",
+                    "en": "did"
+                }
+            },
+            {
+                "tense": "past",
+                "person": "third",
+                "number": "dual",
+                "gender": "male",
+                "text": {
+                    "ar": "فعلا",
+                    "en": "did"
+                }
+            },
+            {
+                "tense": "past",
+                "person": "third",
+                "number": "dual",
+                "gender": "female",
+                "text": {
+                    "ar": "فعلتا",
+                    "en": "did"
+                }
+            },
+            {
+                "tense": "past",
+                "person": "third",
+                "number": "plural",
+                "gender": "male",
+                "text": {
+                    "ar": "فعلوا",
+                    "en": "did"
+                }
+            },
+            {
+                "tense": "past",
+                "person": "third",
+                "number": "plural",
+                "gender": "female",
+                "text": {
+                    "ar": "فعلن",
+                    "en": "did"
+                }
+            }
+        ]
+    }
+]
