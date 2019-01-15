@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === 'production') {
   bot = new Bot(token, { polling: true })
 }
 
-function postNewQuestion(chatID) {
+function postNewQuestion (chatID) {
   const question = quiz.generateQuestion(words)
   storage[chatID] = { 'answer': question.answer }
 
