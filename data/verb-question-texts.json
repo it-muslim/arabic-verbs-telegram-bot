@@ -1,0 +1,40 @@
+{
+    "en": {
+        "first": {
+            "singular": {
+                "both": "I"
+            },
+            "plural": {
+                "both": "We"
+            }
+        },
+        "second": {
+            "singular": {
+                "male": "You (one man)",
+                "female": "You (one woman)"
+            },
+            "dual": {
+                "male": "You (two men)",
+                "female": "You (two women)"
+            },
+            "plural": {
+                "male": "You (many men)",
+                "female": "You (many women)"
+            }
+        },
+        "third": {
+            "singular": {
+                "male": "He",
+                "female": "She"
+            },
+            "dual": {
+                "male": "They (two men)",
+                "female": "They (two women)"
+            },
+            "plural": {
+                "male": "They (many men)",
+                "female": "They (many women)"
+            }
+        }
+    }
+}

@@ -1,7 +1,6 @@
 const token = process.env.TOKEN
 const Bot = require('node-telegram-bot-api')
 const quiz = require('./quiz.js')
-const words = require('./data.json')
 
 let bot
 let storage = {}
@@ -14,7 +13,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 function postNewQuestion (chatID) {
-  const question = quiz.generateQuestion(words)
+  const question = quiz.generateQuestion('en')
   storage[chatID] = { 'answer': question.answer }
 
   const opts = {
