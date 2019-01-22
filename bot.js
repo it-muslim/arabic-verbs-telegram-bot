@@ -41,7 +41,7 @@ bot.onText(/^\/start$/, (msg) => {
 
 bot.onText(/^\/play$/, (msg) => {
   const chatID = msg.chat.id
-  const question = quiz.genQuestion('en')
+  const question = quiz.generateQuestion('en')
   storage[chatID] = { 'answer': question.answer }
 
   const opts = {
