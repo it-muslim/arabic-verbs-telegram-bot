@@ -12,6 +12,16 @@ if (process.env.NODE_ENV === 'production') {
   bot = new Bot(token, { polling: true })
 }
 
+function postNewQuestion (chatID) {
+  const question = quiz.generateQuestion('en')
+  storage[chatID] = { 'answer': question.answer }
+
+  const opts = {
+    'reply_markup': { 'keyboard': [question.options], 'one_time_keyboard': true }
+  }
+  bot.sendMessage(chatID, question.text, opts)
+}
+
 bot.onText(/^[^/]/, function (msg) {
   const chatID = msg.chat.id
   if (storage[chatID] == null || storage[chatID].answer == null) {
@@ -28,7 +38,8 @@ bot.onText(/^[^/]/, function (msg) {
   } else {
     bot.sendMessage(chatID, 'Oops, the right answer is: ' + answer)
   }
-  delete storage[chatID].answer
+
+  postNewQuestion(chatID)
 })
 
 bot.onText(/^\/start$/, (msg) => {
@@ -40,14 +51,7 @@ bot.onText(/^\/start$/, (msg) => {
 })
 
 bot.onText(/^\/play$/, (msg) => {
-  const chatID = msg.chat.id
-  const question = quiz.generateQuestion('en')
-  storage[chatID] = { 'answer': question.answer }
-
-  const opts = {
-    'reply_markup': { 'keyboard': [question.options], 'one_time_keyboard': true }
-  }
-  bot.sendMessage(chatID, question.text, opts)
+  postNewQuestion(msg.chat.id)
 })
 
 module.exports = bot
