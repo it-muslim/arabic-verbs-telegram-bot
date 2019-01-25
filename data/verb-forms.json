@@ -1,6 +1,6 @@
 [
     {
-        "base": "فعل",
+        "base": "فَعَلَ",
         "forms": [
             {
                 "tense": "past",
@@ -8,7 +8,7 @@
                 "number": "singular",
                 "gender": "both",
                 "text": {
-                    "ar": "فعلت",
+                    "ar": "فَعَلتُ",
                     "en": "did"
                 }
             },
@@ -18,7 +18,7 @@
                 "number": "plural",
                 "gender": "both",
                 "text": {
-                    "ar": "فعلنا",
+                    "ar": "فَعَلنا",
                     "en": "did"
                 }
             },
@@ -28,7 +28,7 @@
                 "number": "singular",
                 "gender": "male",
                 "text": {
-                    "ar": "فعلت",
+                    "ar": "فَعَلتَ",
                     "en": "did"
                 }
             },
@@ -38,7 +38,7 @@
                 "number": "singular",
                 "gender": "female",
                 "text": {
-                    "ar": "فعلت",
+                    "ar": "فَعَلتِ",
                     "en": "did"
                 }
             },
@@ -48,7 +48,7 @@
                 "number": "dual",
                 "gender": "male",
                 "text": {
-                    "ar": "فعلتما",
+                    "ar": "فَعَلتُما",
                     "en": "did"
                 }
             },
@@ -58,7 +58,7 @@
                 "number": "dual",
                 "gender": "female",
                 "text": {
-                    "ar": "فعلتما",
+                    "ar": "فَعَلتُما",
                     "en": "did"
                 }
             },
@@ -68,7 +68,7 @@
                 "number": "plural",
                 "gender": "male",
                 "text": {
-                    "ar": "فعلتم",
+                    "ar": "فَعَلتُم",
                     "en": "did"
                 }
             },
@@ -78,7 +78,7 @@
                 "number": "plural",
                 "gender": "female",
                 "text": {
-                    "ar": "فعلتن",
+                    "ar": "فَعَلتُنَّ",
                     "en": "did"
                 }
             },
@@ -88,7 +88,7 @@
                 "number": "singular",
                 "gender": "male",
                 "text": {
-                    "ar": "فعل",
+                    "ar": "فَعَلَ",
                     "en": "did"
                 }
             },
@@ -98,7 +98,7 @@
                 "number": "singular",
                 "gender": "female",
                 "text": {
-                    "ar": "فعلت",
+                    "ar": "فَعَلَت",
                     "en": "did"
                 }
             },
@@ -108,7 +108,7 @@
                 "number": "dual",
                 "gender": "male",
                 "text": {
-                    "ar": "فعلا",
+                    "ar": "فَعَلا",
                     "en": "did"
                 }
             },
@@ -118,7 +118,7 @@
                 "number": "dual",
                 "gender": "female",
                 "text": {
-                    "ar": "فعلتا",
+                    "ar": "فَعَلَتا",
                     "en": "did"
                 }
             },
@@ -128,7 +128,7 @@
                 "number": "plural",
                 "gender": "male",
                 "text": {
-                    "ar": "فعلوا",
+                    "ar": "فَعَلوا",
                     "en": "did"
                 }
             },
@@ -138,7 +138,7 @@
                 "number": "plural",
                 "gender": "female",
                 "text": {
-                    "ar": "فعلن",
+                    "ar": "فَعَلنَ",
                     "en": "did"
                 }
             }
