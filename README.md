@@ -1,8 +1,10 @@
 [![Build Status](https://travis-ci.com/it-muslim/arabic-verbs-telegram-bot.svg?branch=master)](https://travis-ci.com/it-muslim/arabic-verbs-telegram-bot)
 
-# terergram-arabic-verb-bot
+# Arabic Verbs Telegram Bot
 
 This is a simple telegram bot for training your Arabic verbs.
+
+URL: https://t.me/ArabicVerbConjugatorBot
 
 # Basic usage example
 
