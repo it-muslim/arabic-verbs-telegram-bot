@@ -2,7 +2,7 @@ const token = process.env.TOKEN
 const ITMuslim = require('./itMuslim.js')
 const Bot = require('node-telegram-bot-api')
 const quiz = require('./quiz.js')
-const l10 = require('./data/localization.json')
+const l10n = require('./data/localization.json')
 
 let bot
 let storage = { base_language: ITMuslim.Language.en }
@@ -47,7 +47,7 @@ bot.onText(/^[^/]/, function (msg) {
   if (storage[chatID] == null || storage[chatID].answer == null) {
     bot.sendMessage(
       chatID,
-      ITMuslim.localizeString(l10[lgCode].wrong_command),
+      ITMuslim.localizeString(l10n[lgCode].wrong_command),
       { parse_mode: 'Markdown' }
     )
     return
@@ -56,9 +56,9 @@ bot.onText(/^[^/]/, function (msg) {
   const answer = storage[chatID].answer
   let result
   if (msg.text === answer) {
-    result = ITMuslim.localizeString(l10[lgCode].well_done)
+    result = ITMuslim.localizeString(l10n[lgCode].well_done)
   } else {
-    result = ITMuslim.localizeString(l10[lgCode].wrong_answer_format, answer)
+    result = ITMuslim.localizeString(l10n[lgCode].wrong_answer_format, answer)
   }
   bot.sendMessage(chatID,
     result,
@@ -74,7 +74,7 @@ bot.onText(/^\/start$/, (msg) => {
   const lgCode = (storage[chatID] && storage[chatID].language_code) || storage.base_language
   bot.sendMessage(
     msg.chat.id,
-    ITMuslim.localizeString(l10[lgCode].welcome_format, msg.from.first_name),
+    ITMuslim.localizeString(l10n[lgCode].welcome_format, msg.from.first_name),
     { parse_mode: 'Markdown' }
   )
 })
