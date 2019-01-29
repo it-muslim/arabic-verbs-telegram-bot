@@ -1,35 +1,41 @@
 const token = process.env.TOKEN
-const ITMuslim = require('./itMuslim.js')
 const Bot = require('node-telegram-bot-api')
 const quiz = require('./quiz.js')
-const l10n = require('./data/localization.json')
+const i18n = require('i18n')
+const defaultLocale = 'en'
+const supportedLocales = ['en', 'ru']
 
-let bot
-let storage = { base_language: ITMuslim.Language.en }
+let bot = createBot()
+let storage = {}
+i18n.configure({
+  directory: 'data/locales/',
+  locales: supportedLocales,
+  defaultLocale: defaultLocale
+})
 
-if (process.env.NODE_ENV === 'production') {
-  bot = new Bot(token)
-  bot.setWebHook(process.env.HEROKU_URL + bot.token)
-} else {
-  bot = new Bot(token, { polling: true })
-}
-
-// Prepares current user storage and user language of interface and content
-function prepareUser (msg) {
-  const chatID = msg.chat.id
-  if (storage[chatID] != null) {
-    return
+function createBot () {
+  if (process.env.NODE_ENV !== 'production') {
+    return new Bot(token, { polling: true })
   }
 
-  let str = msg.from.language_code.toLowerCase()
-  let lgCode = str.substring(0, 2) // dropping region code
-  lgCode = ITMuslim.Language.hasOwnProperty(lgCode) ? lgCode : storage.base_language
-  storage[chatID] = { language_code: lgCode }
+  let bot = new Bot(token)
+  bot.setWebHook(process.env.HEROKU_URL + bot.token)
+  return bot
 }
 
-function postNewQuestion (chatID) {
-  const lgCode = (storage[chatID] && storage[chatID].language_code) || storage.base_language
-  const question = quiz.generateQuestion(lgCode)
+function localeForMsg (msg) {
+  const chatID = msg.chat.id
+  let locale = msg.from.language_code.toLowerCase()
+  if (supportedLocales.includes(locale) === false) {
+    locale = defaultLocale
+  }
+  return (storage[chatID] && storage[chatID].locale) || locale
+}
+
+function postNewQuestion (msg) {
+  const chatID = msg.chat.id
+  const locale = localeForMsg(msg)
+  const question = quiz.generateQuestion(locale)
   storage[chatID].answer = question.answer
 
   const opts = {
@@ -43,45 +49,87 @@ function postNewQuestion (chatID) {
 
 bot.onText(/^[^/]/, function (msg) {
   const chatID = msg.chat.id
-  const lgCode = (storage[chatID] && storage[chatID].language_code) || storage.base_language
+  const locale = localeForMsg(msg)
   if (storage[chatID] == null || storage[chatID].answer == null) {
     bot.sendMessage(
       chatID,
-      ITMuslim.localizeString(l10n[lgCode].wrong_command),
+      i18n.__({
+        phrase: 'wrong_command',
+        locale: locale
+      }),
       { parse_mode: 'Markdown' }
     )
     return
   }
 
   const answer = storage[chatID].answer
-  let result
+  let answerReply
   if (msg.text === answer) {
-    result = ITMuslim.localizeString(l10n[lgCode].well_done)
+    answerReply = i18n.__({ phrase: 'well_done', locale: locale })
   } else {
-    result = ITMuslim.localizeString(l10n[lgCode].wrong_answer_format, answer)
+    answerReply = i18n.__({ phrase: 'wrong_answer_format', locale: locale }, answer)
   }
   bot.sendMessage(chatID,
-    result,
+    answerReply,
     { parse_mode: 'Markdown' }).then(() =>
-    postNewQuestion(chatID)
+    postNewQuestion(msg)
   )
 })
 
 bot.onText(/^\/start$/, (msg) => {
-  prepareUser(msg)
-
+  const locale = localeForMsg(msg)
   const chatID = msg.chat.id
-  const lgCode = (storage[chatID] && storage[chatID].language_code) || storage.base_language
+  const welcomeMsg = i18n.__({
+    phrase: 'welcome_format',
+    locale: locale },
+  msg.from.first_name)
   bot.sendMessage(
-    msg.chat.id,
-    ITMuslim.localizeString(l10n[lgCode].welcome_format, msg.from.first_name),
+    chatID,
+    welcomeMsg,
     { parse_mode: 'Markdown' }
   )
 })
 
 bot.onText(/^\/play$/, (msg) => {
-  prepareUser(msg)
-  postNewQuestion(msg.chat.id)
+  postNewQuestion(msg)
+})
+
+bot.onText(/\/setLanguage (.+)/, (msg, match) => {
+  const chatID = msg.chat.id
+  const userlocale = match[1]
+  let locale
+  let responseMsg
+  if (!supportedLocales.includes(userlocale)) {
+    locale = localeForMsg(msg)
+    responseMsg = i18n.__({
+      phrase: 'failed_change_language_format',
+      locale: locale
+    },
+    userlocale)
+  } else {
+    locale = userlocale
+    responseMsg = i18n.__({
+      phrase: 'success_change_language_format',
+      locale: locale
+    },
+    userlocale)
+  }
+
+  if (storage[chatID]) {
+    storage[chatID].locale = locale
+  } else {
+    storage[chatID] = { locale: locale }
+  }
+
+  bot.sendMessage(
+    chatID,
+    responseMsg,
+    { parse_mode: 'Markdown' }
+  )
+})
+
+bot.on('polling_error', (error) => {
+  console.log(error)
 })
 
 module.exports = bot

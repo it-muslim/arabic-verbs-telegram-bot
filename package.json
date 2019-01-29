@@ -29,9 +29,10 @@
   "homepage": "https://github.com/it-muslim/arabic-verbs-telegram-bot#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
-    "node-telegram-bot-api": "^0.30.0",
-    "dotenv": "^6.2.0"
+    "i18n": "^0.8.3",
+    "node-telegram-bot-api": "^0.30.0"
   },
   "devDependencies": {
     "eslint": "^5.12.0",
