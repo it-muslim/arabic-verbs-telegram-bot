@@ -36,6 +36,9 @@ function postNewQuestion (msg) {
   const chatID = msg.chat.id
   const locale = localeForMsg(msg)
   const question = quiz.generateQuestion(locale)
+  if (!storage[chatID]) {
+    storage[chatID] = {}
+  }
   storage[chatID].answer = question.answer
 
   const opts = {
