@@ -1,6 +1,6 @@
 [
     {
-        "base": "فعل",
+        "base": "فَعَلَ",
         "forms": [
             {
                 "tense": "past",
@@ -8,7 +8,7 @@
                 "number": "singular",
                 "gender": "both",
                 "text": {
-                    "ar": "فعلت",
+                    "ar": "فَعَلتُ",
                     "en": "did",
                     "ru": "сделал"
                 }
@@ -19,7 +19,7 @@
                 "number": "plural",
                 "gender": "both",
                 "text": {
-                    "ar": "فعلنا",
+                    "ar": "فَعَلنا",
                     "en": "did",
                     "ru": "сделали"
                 }
@@ -30,7 +30,7 @@
                 "number": "singular",
                 "gender": "male",
                 "text": {
-                    "ar": "فعل",
+                    "ar": "فَعَلتَ",
                     "en": "did",
                     "ru": "сделал"
                 }
@@ -41,7 +41,7 @@
                 "number": "singular",
                 "gender": "female",
                 "text": {
-                    "ar": "فعلت",
+                    "ar": "فَعَلتِ",
                     "en": "did",
                     "ru": "сделала"
                 }
@@ -52,7 +52,7 @@
                 "number": "dual",
                 "gender": "male",
                 "text": {
-                    "ar": "فعلتما",
+                    "ar": "فَعَلتُما",
                     "en": "did",
                     "ru": "сделали"
                 }
@@ -63,7 +63,7 @@
                 "number": "dual",
                 "gender": "female",
                 "text": {
-                    "ar": "فعلتما",
+                    "ar": "فَعَلتُما",
                     "en": "did",
                     "ru": "сделали"
                 }
@@ -74,7 +74,7 @@
                 "number": "plural",
                 "gender": "male",
                 "text": {
-                    "ar": "فعلتم",
+                    "ar": "فَعَلتُم",
                     "en": "did",
                     "ru": "сделали"
                 }
@@ -85,7 +85,7 @@
                 "number": "plural",
                 "gender": "female",
                 "text": {
-                    "ar": "فعلتن",
+                    "ar": "فَعَلتُنَّ",
                     "en": "did",
                     "ru": "сделали"
                 }
@@ -96,7 +96,7 @@
                 "number": "singular",
                 "gender": "male",
                 "text": {
-                    "ar": "فعل",
+                    "ar": "فَعَلَ",
                     "en": "did",
                     "ru": "сделал"
                 }
@@ -107,7 +107,7 @@
                 "number": "singular",
                 "gender": "female",
                 "text": {
-                    "ar": "فعلت",
+                    "ar": "فَعَلَت",
                     "en": "did",
                     "ru": "сделала"
                 }
@@ -118,7 +118,7 @@
                 "number": "dual",
                 "gender": "male",
                 "text": {
-                    "ar": "فعلا",
+                    "ar": "فَعَلا",
                     "en": "did",
                     "ru": "сделали"
                 }
@@ -129,7 +129,7 @@
                 "number": "dual",
                 "gender": "female",
                 "text": {
-                    "ar": "فعلتا",
+                    "ar": "فَعَلَتا",
                     "en": "did",
                     "ru": "сделали"
                 }
@@ -140,7 +140,7 @@
                 "number": "plural",
                 "gender": "male",
                 "text": {
-                    "ar": "فعلوا",
+                    "ar": "فَعَلوا",
                     "en": "did",
                     "ru": "сделали"
                 }
@@ -151,7 +151,7 @@
                 "number": "plural",
                 "gender": "female",
                 "text": {
-                    "ar": "فعلن",
+                    "ar": "فَعَلنَ",
                     "en": "did",
                     "ru": "сделали"
                 }
