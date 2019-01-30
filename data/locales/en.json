@@ -3,7 +3,7 @@
   "well_done" : "Well done!",
   "wrong_answer_format" : "Oops, the right answer is: *%s*",
   "wrong_command" : "The training has not been started! Start the training by typing /play",
-  "lang_choose" : "The language is not chosen. Choose a language by typing /setLanguage",
+  "lang_choose" : "The language is not chosen. Choose a language by typing /language",
   "success_change_language_format" : "Successfully changed the language to \"%s\" ✅",
   "failed_change_language_format" : "Sorry, we are not support \"%s\" for now 😞"
 }
