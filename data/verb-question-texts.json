@@ -36,5 +36,43 @@
                 "female": "They (many women)"
             }
         }
+    },
+    "ru": {
+        "first": {
+            "singular": {
+                "both": "Я"
+            },
+            "plural": {
+                "both": "Мы"
+            }
+        },
+        "second": {
+            "singular": {
+                "male": "Ты (мужчина)",
+                "female": "Ты (женщина)"
+            },
+            "dual": {
+                "male": "Вы (двое мужчин)",
+                "female": "Вы (двое женщин)"
+            },
+            "plural": {
+                "male": "Вы (мужчины)",
+                "female": "Вы (женщины)"
+            }
+        },
+        "third": {
+            "singular": {
+                "male": "Он",
+                "female": "Она"
+            },
+            "dual": {
+                "male": "Они (двое мужчин)",
+                "female": "Они (двое женщин)"
+            },
+            "plural": {
+                "male": "Они (мужчины)",
+                "female": "Они (женщины)"
+            }
+        }
     }
 }

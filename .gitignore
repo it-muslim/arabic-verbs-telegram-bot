@@ -6,3 +6,5 @@ npm-debug.log
 *.env
 *.dev
 config.json
+.idea
+.DS_Store
