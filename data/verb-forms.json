@@ -155,7 +155,162 @@
                     "en": "did",
                     "ru": "сделали"
                 }
+            },
+            {
+                "tense": "present",
+                "person": "first",
+                "number": "singular",
+                "gender": "both",
+                "text": {
+                    "ar": "أَفعَلُ",
+                    "en": "do",
+                    "ru": "делаю"
+                }
+            },
+            {
+                "tense": "present",
+                "person": "first",
+                "number": "plural",
+                "gender": "both",
+                "text": {
+                    "ar": "نَفعَلُ",
+                    "en": "do",
+                    "ru": "делаем"
+                }
+            },
+            {
+                "tense": "present",
+                "person": "second",
+                "number": "singular",
+                "gender": "male",
+                "text": {
+                    "ar": "تَفعَلُ",
+                    "en": "do",
+                    "ru": "делаешь"
+                }
+            },
+            {
+                "tense": "present",
+                "person": "second",
+                "number": "singular",
+                "gender": "female",
+                "text": {
+                    "ar": "تَفعَلينَ",
+                    "en": "do",
+                    "ru": "делаешь"
+                }
+            },
+            {
+                "tense": "present",
+                "person": "second",
+                "number": "dual",
+                "gender": "male",
+                "text": {
+                    "ar": "تَفعَلانِ",
+                    "en": "do",
+                    "ru": "делаете"
+                }
+            },
+            {
+                "tense": "present",
+                "person": "second",
+                "number": "dual",
+                "gender": "female",
+                "text": {
+                    "ar": "تَفعَلانِ",
+                    "en": "do",
+                    "ru": "делаете"
+                }
+            },
+            {
+                "tense": "present",
+                "person": "second",
+                "number": "plural",
+                "gender": "male",
+                "text": {
+                    "ar": "تَفعَلونَ",
+                    "en": "do",
+                    "ru": "делаете"
+                }
+            },
+            {
+                "tense": "present",
+                "person": "second",
+                "number": "plural",
+                "gender": "female",
+                "text": {
+                    "ar": "تَفعَلنَ",
+                    "en": "do",
+                    "ru": "делаете"
+                }
+            },
+            {
+                "tense": "present",
+                "person": "third",
+                "number": "singular",
+                "gender": "male",
+                "text": {
+                    "ar": "يَفعَلُ",
+                    "en": "does",
+                    "ru": "делает"
+                }
+            },
+            {
+                "tense": "present",
+                "person": "third",
+                "number": "singular",
+                "gender": "female",
+                "text": {
+                    "ar": "تَفعَلُ",
+                    "en": "does",
+                    "ru": "делает"
+                }
+            },
+            {
+                "tense": "present",
+                "person": "third",
+                "number": "dual",
+                "gender": "male",
+                "text": {
+                    "ar": "يَفعَلانِ",
+                    "en": "do",
+                    "ru": "делают"
+                }
+            },
+            {
+                "tense": "present",
+                "person": "third",
+                "number": "dual",
+                "gender": "female",
+                "text": {
+                    "ar": "تَفعَلانِ",
+                    "en": "do",
+                    "ru": "делают"
+                }
+            },
+            {
+                "tense": "present",
+                "person": "third",
+                "number": "plural",
+                "gender": "male",
+                "text": {
+                    "ar": "يَفعَلونَ",
+                    "en": "do",
+                    "ru": "делают"
+                }
+            },
+            {
+                "tense": "present",
+                "person": "third",
+                "number": "plural",
+                "gender": "female",
+                "text": {
+                    "ar": "يَفعَلنَ",
+                    "en": "do",
+                    "ru": "делают"
+                }
             }
+
         ]
     }
 ]
