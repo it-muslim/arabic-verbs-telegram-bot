@@ -3,10 +3,12 @@ const assert = require('assert')
 const QUESTION_SIZE = 4
 
 const words = require('./data/verb-forms.json')
-const questionTexts = require('./data/verb-question-texts.json')
+const pronouns = require('./data/pronouns.json')
 
 function generateQuestionText (word, lang) {
-  const prefix = questionTexts[lang][word.person][word.number][word.gender]
+  let prefix = pronouns[word.pronoun].text[lang]
+  // Capitalize first letter
+  prefix = prefix.charAt(0).toUpperCase() + prefix.slice(1)
   return `${prefix} ${word.text[lang]}`
 }
 

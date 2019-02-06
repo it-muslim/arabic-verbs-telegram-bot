@@ -1,0 +1,142 @@
+{
+    "fsb": {
+        "person": "first",
+        "number": "singular",
+        "gender": "both",
+        "text": {
+            "ar": "أَنا",
+            "en": "I",
+            "ru": "я"
+        }
+    },
+    "fpb": {
+        "person": "first",
+        "number": "plural",
+        "gender": "both",
+        "text": {
+            "ar": "نَحنُ",
+            "en": "we",
+            "ru": "мы"
+        }
+    },
+    "ssm": {
+        "person": "second",
+        "number": "singular",
+        "gender": "male",
+        "text": {
+            "ar": "أَنتَ",
+            "en": "you (one man)",
+            "ru": "ты (мужчина)"
+        }
+    },
+    "ssf": {
+        "person": "second",
+        "number": "singular",
+        "gender": "female",
+        "text": {
+            "ar": "أَنتِ",
+            "en": "you (one woman)",
+            "ru": "ты (женщина)"
+        }
+    },
+    "sdm": {
+        "person": "second",
+        "number": "dual",
+        "gender": "male",
+        "text": {
+            "ar": "أَنتُما",
+            "en": "you (two men)",
+            "ru": "вы (два мужчины)"
+        }
+    },
+    "sdf": {
+        "person": "second",
+        "number": "dual",
+        "gender": "female",
+        "text": {
+            "ar": "أَنتُما",
+            "en": "you (two women)",
+            "ru": "вы (две женщины)"
+        }
+    },
+    "spm": {
+        "person": "second",
+        "number": "plural",
+        "gender": "male",
+        "text": {
+            "ar": "أَنتُم",
+            "en": "you (many men)",
+            "ru": "вы (много мужчин)"
+        }
+    },
+    "spf": {
+        "person": "second",
+        "number": "plural",
+        "gender": "female",
+        "text": {
+            "ar": "أَنتُنَّ",
+            "en": "you (many women)",
+            "ru": "вы (много женщин)"
+        }
+    },
+    "tsm": {
+        "person": "third",
+        "number": "singular",
+        "gender": "male",
+        "text": {
+            "ar": "هُوَ",
+            "en": "he",
+            "ru": "он"
+        }
+    },
+    "tsf": {
+        "person": "third",
+        "number": "singular",
+        "gender": "female",
+        "text": {
+            "ar": "هِيَ",
+            "en": "she",
+            "ru": "она"
+        }
+    },
+    "tdm": {
+        "person": "third",
+        "number": "dual",
+        "gender": "male",
+        "text": {
+            "ar": "هُما",
+            "en": "they (two men)",
+            "ru": "они (два мужчины)"
+        }
+    },
+    "tdf": {
+        "person": "third",
+        "number": "dual",
+        "gender": "female",
+        "text": {
+            "ar": "هُما",
+            "en": "they (two women)",
+            "ru": "они (две женщины)"
+        }
+    },
+    "tpm": {
+        "person": "third",
+        "number": "plural",
+        "gender": "male",
+        "text": {
+            "ar": "هُم",
+            "en": "they (many men)",
+            "ru": "они (много мужчин)"
+        }
+    },
+    "tpf": {
+        "person": "third",
+        "number": "plural",
+        "gender": "female",
+        "text": {
+            "ar": "هُنَّ",
+            "en": "they (many women)",
+            "ru": "они (много женщин)"
+        }
+    }
+}

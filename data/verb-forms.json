@@ -4,9 +4,7 @@
         "forms": [
             {
                 "tense": "past",
-                "person": "first",
-                "number": "singular",
-                "gender": "both",
+                "pronoun": "fsb",
                 "text": {
                     "ar": "فَعَلتُ",
                     "en": "did",
@@ -15,9 +13,7 @@
             },
             {
                 "tense": "past",
-                "person": "first",
-                "number": "plural",
-                "gender": "both",
+                "pronoun": "fpb",
                 "text": {
                     "ar": "فَعَلنا",
                     "en": "did",
@@ -26,9 +22,7 @@
             },
             {
                 "tense": "past",
-                "person": "second",
-                "number": "singular",
-                "gender": "male",
+                "pronoun": "ssm",
                 "text": {
                     "ar": "فَعَلتَ",
                     "en": "did",
@@ -37,9 +31,7 @@
             },
             {
                 "tense": "past",
-                "person": "second",
-                "number": "singular",
-                "gender": "female",
+                "pronoun": "ssf",
                 "text": {
                     "ar": "فَعَلتِ",
                     "en": "did",
@@ -48,9 +40,7 @@
             },
             {
                 "tense": "past",
-                "person": "second",
-                "number": "dual",
-                "gender": "male",
+                "pronoun": "sdm",
                 "text": {
                     "ar": "فَعَلتُما",
                     "en": "did",
@@ -59,9 +49,7 @@
             },
             {
                 "tense": "past",
-                "person": "second",
-                "number": "dual",
-                "gender": "female",
+                "pronoun": "sdf",
                 "text": {
                     "ar": "فَعَلتُما",
                     "en": "did",
@@ -70,9 +58,7 @@
             },
             {
                 "tense": "past",
-                "person": "second",
-                "number": "plural",
-                "gender": "male",
+                "pronoun": "spm",
                 "text": {
                     "ar": "فَعَلتُم",
                     "en": "did",
@@ -81,9 +67,7 @@
             },
             {
                 "tense": "past",
-                "person": "second",
-                "number": "plural",
-                "gender": "female",
+                "pronoun": "spf",
                 "text": {
                     "ar": "فَعَلتُنَّ",
                     "en": "did",
@@ -92,9 +76,7 @@
             },
             {
                 "tense": "past",
-                "person": "third",
-                "number": "singular",
-                "gender": "male",
+                "pronoun": "tsm",
                 "text": {
                     "ar": "فَعَلَ",
                     "en": "did",
@@ -103,9 +85,7 @@
             },
             {
                 "tense": "past",
-                "person": "third",
-                "number": "singular",
-                "gender": "female",
+                "pronoun": "tsf",
                 "text": {
                     "ar": "فَعَلَت",
                     "en": "did",
@@ -114,9 +94,7 @@
             },
             {
                 "tense": "past",
-                "person": "third",
-                "number": "dual",
-                "gender": "male",
+                "pronoun": "tdm",
                 "text": {
                     "ar": "فَعَلا",
                     "en": "did",
@@ -125,9 +103,7 @@
             },
             {
                 "tense": "past",
-                "person": "third",
-                "number": "dual",
-                "gender": "female",
+                "pronoun": "tdf",
                 "text": {
                     "ar": "فَعَلَتا",
                     "en": "did",
@@ -136,9 +112,7 @@
             },
             {
                 "tense": "past",
-                "person": "third",
-                "number": "plural",
-                "gender": "male",
+                "pronoun": "tpm",
                 "text": {
                     "ar": "فَعَلوا",
                     "en": "did",
@@ -147,9 +121,7 @@
             },
             {
                 "tense": "past",
-                "person": "third",
-                "number": "plural",
-                "gender": "female",
+                "pronoun": "tpf",
                 "text": {
                     "ar": "فَعَلنَ",
                     "en": "did",
@@ -158,9 +130,7 @@
             },
             {
                 "tense": "present",
-                "person": "first",
-                "number": "singular",
-                "gender": "both",
+                "pronoun": "fsb",
                 "text": {
                     "ar": "أَفعَلُ",
                     "en": "do",
@@ -169,9 +139,7 @@
             },
             {
                 "tense": "present",
-                "person": "first",
-                "number": "plural",
-                "gender": "both",
+                "pronoun": "fpb",
                 "text": {
                     "ar": "نَفعَلُ",
                     "en": "do",
@@ -180,9 +148,7 @@
             },
             {
                 "tense": "present",
-                "person": "second",
-                "number": "singular",
-                "gender": "male",
+                "pronoun": "ssm",
                 "text": {
                     "ar": "تَفعَلُ",
                     "en": "do",
@@ -191,9 +157,7 @@
             },
             {
                 "tense": "present",
-                "person": "second",
-                "number": "singular",
-                "gender": "female",
+                "pronoun": "ssf",
                 "text": {
                     "ar": "تَفعَلينَ",
                     "en": "do",
@@ -202,9 +166,7 @@
             },
             {
                 "tense": "present",
-                "person": "second",
-                "number": "dual",
-                "gender": "male",
+                "pronoun": "sdm",
                 "text": {
                     "ar": "تَفعَلانِ",
                     "en": "do",
@@ -213,9 +175,7 @@
             },
             {
                 "tense": "present",
-                "person": "second",
-                "number": "dual",
-                "gender": "female",
+                "pronoun": "sdf",
                 "text": {
                     "ar": "تَفعَلانِ",
                     "en": "do",
@@ -224,9 +184,7 @@
             },
             {
                 "tense": "present",
-                "person": "second",
-                "number": "plural",
-                "gender": "male",
+                "pronoun": "spm",
                 "text": {
                     "ar": "تَفعَلونَ",
                     "en": "do",
@@ -235,9 +193,7 @@
             },
             {
                 "tense": "present",
-                "person": "second",
-                "number": "plural",
-                "gender": "female",
+                "pronoun": "spf",
                 "text": {
                     "ar": "تَفعَلنَ",
                     "en": "do",
@@ -246,9 +202,7 @@
             },
             {
                 "tense": "present",
-                "person": "third",
-                "number": "singular",
-                "gender": "male",
+                "pronoun": "tsm",
                 "text": {
                     "ar": "يَفعَلُ",
                     "en": "does",
@@ -257,9 +211,7 @@
             },
             {
                 "tense": "present",
-                "person": "third",
-                "number": "singular",
-                "gender": "female",
+                "pronoun": "tsf",
                 "text": {
                     "ar": "تَفعَلُ",
                     "en": "does",
@@ -268,9 +220,7 @@
             },
             {
                 "tense": "present",
-                "person": "third",
-                "number": "dual",
-                "gender": "male",
+                "pronoun": "tdm",
                 "text": {
                     "ar": "يَفعَلانِ",
                     "en": "do",
@@ -279,9 +229,7 @@
             },
             {
                 "tense": "present",
-                "person": "third",
-                "number": "dual",
-                "gender": "female",
+                "pronoun": "tdf",
                 "text": {
                     "ar": "تَفعَلانِ",
                     "en": "do",
@@ -290,9 +238,7 @@
             },
             {
                 "tense": "present",
-                "person": "third",
-                "number": "plural",
-                "gender": "male",
+                "pronoun": "tpm",
                 "text": {
                     "ar": "يَفعَلونَ",
                     "en": "do",
@@ -301,9 +247,7 @@
             },
             {
                 "tense": "present",
-                "person": "third",
-                "number": "plural",
-                "gender": "female",
+                "pronoun": "tpf",
                 "text": {
                     "ar": "يَفعَلنَ",
                     "en": "do",
