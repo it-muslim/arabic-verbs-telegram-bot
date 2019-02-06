@@ -4,7 +4,7 @@
         "forms": [
             {
                 "tense": "past",
-                "pronoun": "i",
+                "pronoun": "fsb",
                 "text": {
                     "ar": "فَعَلتُ",
                     "en": "did",
@@ -13,7 +13,7 @@
             },
             {
                 "tense": "past",
-                "pronoun": "we",
+                "pronoun": "fpb",
                 "text": {
                     "ar": "فَعَلنا",
                     "en": "did",
@@ -130,7 +130,7 @@
             },
             {
                 "tense": "present",
-                "pronoun": "i",
+                "pronoun": "fsb",
                 "text": {
                     "ar": "أَفعَلُ",
                     "en": "do",
@@ -139,7 +139,7 @@
             },
             {
                 "tense": "present",
-                "pronoun": "we",
+                "pronoun": "fpb",
                 "text": {
                     "ar": "نَفعَلُ",
                     "en": "do",

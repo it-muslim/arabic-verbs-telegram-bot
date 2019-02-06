@@ -1,5 +1,5 @@
 {
-    "i": {
+    "fsb": {
         "person": "first",
         "number": "singular",
         "gender": "both",
@@ -9,7 +9,7 @@
             "ru": "я"
         }
     },
-    "we": {
+    "fpb": {
         "person": "first",
         "number": "plural",
         "gender": "both",
