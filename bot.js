@@ -17,7 +17,8 @@ function createBot () {
 
 function localeFromMsg (msg) {
   const chatID = msg.chat.id
-  let locale = msg.from.language_code.toLowerCase()
+  const languageCode = msg.from.language_code
+  let locale = languageCode && languageCode.toLowerCase()
   if (supportedLocales.includes(locale) === false) {
     locale = defaultLocale
   }
