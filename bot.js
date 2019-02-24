@@ -133,6 +133,36 @@ bot.onText(/\/language (.+)/, (msg, match) => {
   )
 })
 
+bot.onText(/\/type (.+)/, (msg, match) => {
+  const chatID = msg.chat.id
+  const locale = localeFromMsg(msg)
+  const type = match[1]
+  let responseMsg
+  switch (type) {
+    case 'salim':
+    case 'mu3tal':
+      responseMsg = i18n.__({
+        phrase: 'success_change_type_format',
+        locale: locale
+      },
+      type)
+      break
+    default:
+      responseMsg = i18n.__({
+        phrase: 'failed_change_type_format',
+        locale: locale
+      },
+      type)
+      break
+  }
+
+  bot.sendMessage(
+    chatID,
+    responseMsg,
+    { parse_mode: 'Markdown' }
+  )
+})
+
 bot.on('polling_error', (error) => {
   console.log(error)
 })

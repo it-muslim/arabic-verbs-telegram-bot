@@ -5,5 +5,7 @@
   "wrong_command" : "The training has not been started! Start the training by typing /play",
   "lang_choose" : "The language is not chosen. Change the language by typing /language",
   "success_change_language_format" : "Successfully changed the language to \"%s\" ✅",
-  "failed_change_language_format" : "Sorry, we don't support \"%s\" for now 😞"
+  "failed_change_language_format" : "Sorry, we don't support \"%s\" for now 😞",
+  "success_change_type_format" : "Sorry, we don't support \"%s\" type for now \uD83D\uDE1E",
+  "failed_change_type_format" : "Sorry, we don't support \"%s\" type for now \uD83D\uDE1E"
 }
