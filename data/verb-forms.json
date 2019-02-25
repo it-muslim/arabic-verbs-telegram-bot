@@ -254,6 +254,265 @@
                     "ru": "делают"
                 }
             }
-        ]
+        ],
+        "type": "sahih"
+    },
+    {
+        "base": "قَالَ",
+        "forms": [
+            {
+                "tense": "past",
+                "pronoun": "fsb",
+                "text": {
+                    "ar": "قُلْتُ",
+                    "en": "said",
+                    "ru": "сказал"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "fpb",
+                "text": {
+                    "ar": "قُلْنَا",
+                    "en": "said",
+                    "ru": "сказали"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "ssm",
+                "text": {
+                    "ar": "قُلْتَ",
+                    "en": "said",
+                    "ru": "сказал"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "ssf",
+                "text": {
+                    "ar": "قُلْتِ",
+                    "en": "said",
+                    "ru": "сказала"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "sdm",
+                "text": {
+                    "ar": "قُلْتُمَا",
+                    "en": "said",
+                    "ru": "сказали"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "sdf",
+                "text": {
+                    "ar": "قُلْتُمَا",
+                    "en": "said",
+                    "ru": "сказали"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "spm",
+                "text": {
+                    "ar": "قُلْتُمْ",
+                    "en": "said",
+                    "ru": "сказали"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "spf",
+                "text": {
+                    "ar": "قُلْتُنَّ",
+                    "en": "said",
+                    "ru": "сказали"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "tsm",
+                "text": {
+                    "ar": "قَالَ",
+                    "en": "said",
+                    "ru": "сказал"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "tsf",
+                "text": {
+                    "ar": "قَالَتْ",
+                    "en": "said",
+                    "ru": "сказала"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "tdm",
+                "text": {
+                    "ar": "قَالَا",
+                    "en": "said",
+                    "ru": "сказали"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "tdf",
+                "text": {
+                    "ar": "قَالَتَا",
+                    "en": "said",
+                    "ru": "сказали"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "tpm",
+                "text": {
+                    "ar": "قَالُوا",
+                    "en": "said",
+                    "ru": "сказали"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "tpf",
+                "text": {
+                    "ar": "قُلْنَ",
+                    "en": "said",
+                    "ru": "сказали"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "fsb",
+                "text": {
+                    "ar": "أَقُولُ",
+                    "en": "say",
+                    "ru": "говорю"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "fpb",
+                "text": {
+                    "ar": "نَقُولُ",
+                    "en": "say",
+                    "ru": "говорим"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "ssm",
+                "text": {
+                    "ar": "تَقُولُ",
+                    "en": "say",
+                    "ru": "говоришь"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "ssf",
+                "text": {
+                    "ar": "تَقُولِينَ",
+                    "en": "say",
+                    "ru": "говоришь"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "sdm",
+                "text": {
+                    "ar": "تَقُولَانِ",
+                    "en": "say",
+                    "ru": "говорите"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "sdf",
+                "text": {
+                    "ar": "تَقُولَانِ",
+                    "en": "say",
+                    "ru": "говорите"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "spm",
+                "text": {
+                    "ar": "تَقُولُونَ",
+                    "en": "say",
+                    "ru": "говорите"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "spf",
+                "text": {
+                    "ar": "تَقُلْنَ",
+                    "en": "say",
+                    "ru": "говорите"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "tsm",
+                "text": {
+                    "ar": "يَقُولُ",
+                    "en": "says",
+                    "ru": "говорит"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "tsf",
+                "text": {
+                    "ar": "تَقُولُ",
+                    "en": "says",
+                    "ru": "говорит"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "tdm",
+                "text": {
+                    "ar": "يَقُولَانِ",
+                    "en": "say",
+                    "ru": "говорят"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "tdf",
+                "text": {
+                    "ar": "تَقُولَانِ",
+                    "en": "say",
+                    "ru": "говорят"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "tpm",
+                "text": {
+                    "ar": "يَقُولُونَ",
+                    "en": "say",
+                    "ru": "говорят"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "tpf",
+                "text": {
+                    "ar": "يَقُلْنَ",
+                    "en": "say",
+                    "ru": "говорят"
+                }
+            }
+        ],
+        "type": "mu3tal"
     }
 ]
