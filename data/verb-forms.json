@@ -514,5 +514,263 @@
             }
         ],
         "type": "mu3tal"
+    },
+    {
+        "base": "وَهَبَ",
+        "forms": [
+            {
+                "tense": "past",
+                "pronoun": "fsb",
+                "text": {
+                    "ar": "وَهَبْتُ",
+                    "en": "gifted",
+                    "ru": "подарил"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "fpb",
+                "text": {
+                    "ar": "وَهَبَا",
+                    "en": "gifted",
+                    "ru": "подарили"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "ssm",
+                "text": {
+                    "ar": "وَهَبتَ",
+                    "en": "gifted",
+                    "ru": "подарил"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "ssf",
+                "text": {
+                    "ar": "وَهَبتِ",
+                    "en": "gifted",
+                    "ru": "подарила"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "sdm",
+                "text": {
+                    "ar": "وَهَبتُمَا",
+                    "en": "gifted",
+                    "ru": "подарили"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "sdf",
+                "text": {
+                    "ar": "وَهَبتُمَا",
+                    "en": "gifted",
+                    "ru": "подарили"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "spm",
+                "text": {
+                    "ar": "وَهَبتُمَ",
+                    "en": "gifted",
+                    "ru": "подарили"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "spf",
+                "text": {
+                    "ar": "وَهَبتُمنَّ",
+                    "en": "gifted",
+                    "ru": "подарили"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "tsm",
+                "text": {
+                    "ar": "وَهَبَ",
+                    "en": "gifted",
+                    "ru": "подарил"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "tsf",
+                "text": {
+                    "ar": "وَهَبَت",
+                    "en": "gifted",
+                    "ru": "подарила"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "tdm",
+                "text": {
+                    "ar": "وَهَبا",
+                    "en": "gifted",
+                    "ru": "подарили"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "tdf",
+                "text": {
+                    "ar": "وَهَبَتا",
+                    "en": "gifted",
+                    "ru": "подарили"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "tpm",
+                "text": {
+                    "ar": "وَهَبوا",
+                    "en": "gifted",
+                    "ru": "подарили"
+                }
+            },
+            {
+                "tense": "past",
+                "pronoun": "tpf",
+                "text": {
+                    "ar": "وَهَبْنَ",
+                    "en": "gifted",
+                    "ru": "подарили"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "fsb",
+                "text": {
+                    "ar": "أَهَبُ",
+                    "en": "gift",
+                    "ru": "дарю"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "fpb",
+                "text": {
+                    "ar": "نَهَبُ",
+                    "en": "gift",
+                    "ru": "дарим"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "ssm",
+                "text": {
+                    "ar": "تَهَبُ",
+                    "en": "gift",
+                    "ru": "даришь"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "ssf",
+                "text": {
+                    "ar": "تَهَبِينَ",
+                    "en": "gift",
+                    "ru": "даришь"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "sdm",
+                "text": {
+                    "ar": "تَهَبَانِ",
+                    "en": "gift",
+                    "ru": "дарите"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "sdf",
+                "text": {
+                    "ar": "تَهَبَانِ",
+                    "en": "gift",
+                    "ru": "дарите"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "spm",
+                "text": {
+                    "ar": "تَهَبُونَ",
+                    "en": "gift",
+                    "ru": "дарите"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "spf",
+                "text": {
+                    "ar": "تَهَبْنَ",
+                    "en": "gift",
+                    "ru": "дарите"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "tsm",
+                "text": {
+                    "ar": "يَهَبُ",
+                    "en": "gifts",
+                    "ru": "дарит"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "tsf",
+                "text": {
+                    "ar": "تَهَبُ",
+                    "en": "gifts",
+                    "ru": "дарит"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "tdm",
+                "text": {
+                    "ar": "يَهَبَان",
+                    "en": "gift",
+                    "ru": "дарят"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "tdf",
+                "text": {
+                    "ar": "تَهَبَان",
+                    "en": "gift",
+                    "ru": "дарят"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "tpm",
+                "text": {
+                    "ar": "يَهَبُونَ",
+                    "en": "gift",
+                    "ru": "дарят"
+                }
+            },
+            {
+                "tense": "present",
+                "pronoun": "tpf",
+                "text": {
+                    "ar": "يَهَبْنَ",
+                    "en": "gift",
+                    "ru": "дарят"
+                }
+            }
+        ],
+        "type": "mivAal"
     }
 ]
