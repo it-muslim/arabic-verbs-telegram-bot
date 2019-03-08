@@ -1,4 +1,5 @@
 const assert = require('assert')
+const shuffle = require('lodash-es/shuffle')
 
 const QUESTION_SIZE = 4
 
@@ -15,8 +16,10 @@ function generateQuestionText (word, lang) {
 function generateQuestion (lang) {
   // Firstly, pick forms of a random word and shuffle them
   let forms = words[Math.floor(Math.random() * words.length)].forms
+
   assert(forms.length >= QUESTION_SIZE)
-  forms = forms.sort(() => 0.5 - Math.random()) // shuffle
+
+  shuffle(forms)
 
   // Now pick first 4 of them and without loss of generality
   // the first one will be the right answer
